@@ -45,7 +45,9 @@ input {
     border: 1px solid #cccccc;
     padding: 8px;
 }
-
+img {
+    margin: 1px 4px;
+}
 button {
     cursor: pointer;
     border: 1px solid #888888;
