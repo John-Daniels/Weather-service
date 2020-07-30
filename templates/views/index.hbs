@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Weather Service | Home
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="/images/weather.png">
+        <link rel="stylesheet" href="/css/style.css">
+        
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Use This site to Get your weather</p>
+
+            <form>
+                <input type="search" id="search" placeholder="type a Location">
+                <button type="submit">search</button>
+            </form>
+
+            <p id="msg-1"></p>
+            <p id="msg-2"></p>
+        </div>      
+        {{>footer}}
+
+        <script src="/js/index.js"></script>
+    </body>
+</html>
