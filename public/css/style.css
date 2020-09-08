@@ -12,6 +12,7 @@ body {
 
 .main-content {
     flex-grow: 1;
+    justify-content: center;
 }
 
 footer {
@@ -37,9 +38,9 @@ header a{
     text-decoration: none;
 }
 .portrait{
-    border: 1px dashed #888888;
+    border: 1px solid #888888;
     border-radius: 10px;
-    min-height: 250px;
+    min-height: 150px;
 }
 input {
     border: 1px solid #cccccc;

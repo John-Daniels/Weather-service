@@ -8,8 +8,9 @@ const search = document.getElementById('search')
 const msg_1 = document.querySelector('#msg-1')
 const msg_2 = document.querySelector("#msg-2")
 
-
-form.addEventListener('submit', (e) => {
+// if u are wondering why i didnt use es6 arrow functions () =>{}
+// it's because some devices dont support it 
+form.addEventListener('submit', function(e) {
     e.preventDefault()
 
     msg_1.textContent = 'Loading...'
@@ -25,8 +26,8 @@ form.addEventListener('submit', (e) => {
         msg_1.textContent = 'Loading...'
         
 
-        fetch(`/weather?address=${search.value}`).then((response) => {
-        response.json().then((data) => {
+        fetch(`/weather?address=${search.value}`).then(function(response){
+        response.json().then(function(data){
             msg_1.className = ""
             if (data.error) {
                 msg_1.className = "err"
