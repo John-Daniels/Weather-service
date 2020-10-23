@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Weather Service | Home
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Use this site to search your current weather">
-        <meta name="keywords" content="weather">
-        <link rel="icon" href="/images/weather.png">
-        <link rel="stylesheet" href="/css/style.css">
-        {{>cdn}}
-    </head>
-    <body>
-        <div class="main-content">
-            {{>header}}
-            <p>Use This site to Get your weather</p>
 
-            <form>
-                <input type="search" id="search" placeholder="type a Location">
-                <button type="submit">search</button>
-            </form>
+<head>
+    <title>
+        Weather Service | Home
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name=" description" content="Use this site to search your current weather">
+    <meta name="keywords" content="weather, weather-service, forecast, jda, lagos">
+    <link rel="icon" href="/images/weather.png">
 
-            <p id="msg-1"></p>
-            <p id="msg-2"></p>
-        </div>      
-        {{>footer}}
+    <script type="text/babel" src="/js/app.js"></script>
 
-        <script src="/js/index.js"></script>
-    </body>
+    <script src="/js/modules/react.js"></script>
+    <script src="/js/modules/react-dom.js"></script>
+    <script src="/js/modules/babel.js"></script>
+
+    {{>cdn}}
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/scss/_modal.scss">
+</head>
+
+<body>
+
+    <div class="main-content">
+        {{>header}}
+        <div id="root"></div>
+    </div>
+    {{>footer}}
+
+</body>
+
 </html>

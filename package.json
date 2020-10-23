@@ -1,14 +1,14 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A weather forecast website made from a weather-api and node.js",
+  "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "john daniels",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

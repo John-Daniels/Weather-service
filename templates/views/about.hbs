@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Weather Service | About
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Use this site to search your current weather">
-        <meta name="keywords" content="weather">
-        <link rel="icon" href="/images/weather.png">
-        <link rel="stylesheet" href="/css/style.css">
-        {{>cdn}}
-    </head>
-    <body>
-        <div class="main-content">
-            {{>header}}
-         <p>This is just a testing website. feel free to search for any location</p>
-            <article>Created by John Daniels And Isaac Mbah</article>
-            <img class="portrait" src="/images/hinix-studios.jpg">
-        </div>    
-        {{>footer}}
-        <noscript>
-            <p>Sorry but your device doesnt support Javascript, Check your browsers settings</p>
-        </noscript>
-    </body>
+
+<head>
+    <title>
+        Weather Service | About
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Use this site to search your current weather">
+    <meta name="keywords" content="weather, weather-service, forecast, jda, lagos">
+    <link rel="icon" href="/images/weather.png">
+    {{>cdn}}
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>This is just a testing website. feel free to search for any location</p>
+        <article class="m-2"> Created by John Daniels And Isaac Mbah </article>
+
+        <article class="flow">
+            Thanks to <a href="http://api.weatherstack.com">http://api.weatherstack.com</a>. This weather api is what
+            this website is built off,
+            Along with, Node.js, React and Bootstrap.
+        </article>
+        <img class="portrait" src="/images/hinix-studios.jpg">
+
+        <div class="container">
+            Contact Us <br />
+            Phone: <a href="tel:+2348138185912">+2348138185912</a> <br />
+            Email: <a href="mailto:adeyemijohndaniels@gmail.com">adeyemijohndaniels@gmail.com</a>
+
+        </div>
+    </div>
+    {{>footer}}
+    <noscript>
+        <p>Sorry but your device doesnt support Javascript, Check your browsers settings</p>
+    </noscript>
+</body>
+
 </html>
