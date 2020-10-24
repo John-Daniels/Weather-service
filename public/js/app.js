@@ -85,7 +85,7 @@ class Weather extends React.Component {
             return this.state.data !== [] ? (
               <li>
                 <img
-                  className="image"
+                  className="image center"
                   src={d.forecast.current.weather_icons[0]}
                 />
                 <article className="container center">
@@ -101,7 +101,7 @@ class Weather extends React.Component {
                   <br />
                   <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn btn-primary bbtn center"
                     data-toggle="modal"
                     data-target="#exampleModalCenter"
                   >
@@ -161,18 +161,6 @@ class Weather extends React.Component {
                               Cloud-Cover:{d.forecast.current.cloudcover}
                               <br />
                               humidity:{d.forecast.current.humidity}
-                              {/* <br />
-                              Sunrise: {d.forecast.forecast.astro.sunrise}
-                              <br />
-                              Sunset: {d.forecast.forecast.astro.sunset}
-                              <br />
-                              Max-temp: {d.forecast.forecast.maxtemp}
-                              <br />
-                              Min-temp: {d.forecast.forecast.mintemp}
-                              <br />
-                              Avg-temp: {d.forecast.forecast.avgtemp}
-                              <br />
-                              Total-Snow: {d.forecast.forecast.totalsnow} */}
                             </article>
                           </li>
                         </div>
