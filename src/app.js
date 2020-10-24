@@ -75,7 +75,7 @@ app.get("*", (req, res) => {
     name: "HINIX STUDIO's",
   });
 });
-
+//some code
 app.listen(port, () => {
   console.log(`server is up on port ${port}.`);
 });
